@@ -7,7 +7,6 @@ weight: 0
 
 ## Hiboot - High performance web and cli application framework with dependency injection
 
-
 <p align="center">
   <a href="https://travis-ci.org/hidevopsio/hiboot?branch=master">
     <img src="https://travis-ci.org/hidevopsio/hiboot.svg?branch=master" alt="Build Status"/>
@@ -33,8 +32,6 @@ weight: 0
 Hiboot is a cloud native web and cli application framework written in Go.
 
 Hiboot is not trying to reinvent everything, it integrates the popular libraries but make them simpler, easier to use. It borrowed some of the Spring features like dependency injection, aspect oriented programming, and auto configuration. You can integrate any other libraries easily by auto configuration with dependency injection support.
-
-If you are a Java developer, you can start coding in Go without learning curve.
 
 ## Overview
 
