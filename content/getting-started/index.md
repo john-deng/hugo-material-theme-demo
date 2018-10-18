@@ -1,29 +1,25 @@
 ---
-date: 2016-03-09T00:11:02+01:00
+date: 2018-10-10T00:11:02+01:00
 title: Getting started
 weight: 10
 ---
 
-## Getting started
+## Web application
 
-This section will show you how to create and run a simplest hiboot application. Let’s get started!
+This section will show you how to create and run a simple hiboot application. Let’s get started!
 
-### Getting started with Hiboot web application
-
-#### Get the source code
+### Get the source code
 
 ```bash
 go get -u github.com/hidevopsio/hiboot
 
 cd $GOPATH/src/github.com/hidevopsio/hiboot/examples/web/helloworld/
 
-
 ```
 
-#### Sample code
- 
-Below is the simplest web application in Go.
+### Sample code
 
+Below is the simplest web application in Go.
 
 ```go
 // Line 1: main package
@@ -65,11 +61,13 @@ go run main.go
 curl http://localhost:8080/
 ```
 
-```
+Output:
+
+```bash
 Hello, world
 ```
 
-### Getting started with Hiboot cli application
+## Cli application
 
 Writing Hiboot cli application is as simple as web application, you can take the advantage of dependency injection introduced by Hiboot.
 
@@ -120,7 +118,7 @@ func main() {
 
 ```
 
-#### Run cli application
+### Run cli application
 
 ```bash
 dep ensure
@@ -132,7 +130,7 @@ go run main.go
 Hello, world
 ```
 
-#### Build the cli application and run
+### Build the cli application and run
 
 ```bash
 go build
@@ -164,12 +162,4 @@ Greeting to Hiboot
 
 ```bash
 Hello, Hiboot
-```
-
-```toml
-[blackfriday]
-  smartypants = true
-  fractions = true
-  smartDashes = true
-  plainIDAnchors = true
 ```
