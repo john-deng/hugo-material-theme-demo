@@ -1,6 +1,6 @@
-baseurl = "https://hidevops.io/"
+baseurl = "https://hiboot.hidevops.io/"
 languageCode = "en-us"
-title = "Hiboot"
+title = "Hiboot Documentation"
 theme = "hugo-material-docs"
 metadataformat = "yaml"
 canonifyurls = true
@@ -55,10 +55,10 @@ googleAnalytics = ""
 	url    = "getting-started/"
 	weight = 10
 
-[[menu.main]]
-	name   = "Adding content"
-	url    = "adding-content/"
-	weight = 20
+# [[menu.main]]
+# 	name   = "Adding content"
+# 	url    = "adding-content/"
+# 	weight = 20
 
 # [[menu.main]]
 # 	name   = "Roadmap"
