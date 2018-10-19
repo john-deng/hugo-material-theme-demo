@@ -1,6 +1,6 @@
-baseurl = "https://hiboot.hidevops.io/"
+baseurl = "https://example.org/"
 languageCode = "en-us"
-title = "Hiboot Documentation"
+title = "Material Docs"
 theme = "hugo-material-docs"
 metadataformat = "yaml"
 canonifyurls = true
@@ -9,15 +9,15 @@ googleAnalytics = ""
 
 [params]
 	# General information
-	author = "John Deng"
-	description = "Official site hidevops.io"
-	copyright = "Released under the Apache 2.0 license"
+	author = "Digitalcraftsman"
+	description = "A material design theme for documentations."
+	copyright = "Released under the MIT license"
 
 	# Repository
 	provider = "GitHub"
-	repo_url = "https://github.com/hidevopsio/hiboot"
+	repo_url = "https://github.com/digitalcraftsman/hugo-material-docs"
 
-	version = "0.9.5"
+	version = "1.0.0"
 	logo = "images/logo.png"
 	favicon = ""
 
@@ -31,8 +31,8 @@ googleAnalytics = ""
 	highlight_css  = ""
 
 	[params.palette]
-    	primary = "cyan"
-    	accent  = "green"
+    	primary = "red"
+    	accent  = "teal"
 
     [params.font]
     	text = "Ubuntu"
@@ -41,34 +41,34 @@ googleAnalytics = ""
 
 [social]
 	twitter = ""
-	github  = "hidevopsio"
-	email   = "hi.devops.io@gmail.com"
+	github  = "digitalcraftsman"
+	email   = "hello@email.com"
 
 
-# [[menu.main]]
-# 	name   = "Material"
-# 	url    = "/"
-# 	weight = 0
+[[menu.main]]
+	name   = "Material"
+	url    = "/"
+	weight = 0
 
 [[menu.main]]
 	name   = "Getting started"
 	url    = "getting-started/"
 	weight = 10
 
-# [[menu.main]]
-# 	name   = "Adding content"
-# 	url    = "adding-content/"
-# 	weight = 20
+[[menu.main]]
+	name   = "Adding content"
+	url    = "adding-content/"
+	weight = 20
 
-# [[menu.main]]
-# 	name   = "Roadmap"
-# 	url    = "roadmap/"
-# 	weight = 30
+[[menu.main]]
+	name   = "Roadmap"
+	url    = "roadmap/"
+	weight = 30
 
-# [[menu.main]]
-# 	name   = "License"
-# 	url    = "license/"
-# 	weight = 40
+[[menu.main]]
+	name   = "License"
+	url    = "license/"
+	weight = 40
 
 
 [blackfriday]
@@ -76,3 +76,7 @@ googleAnalytics = ""
 	fractions = true
 	smartDashes = true
 	plainIDAnchors = true
+
+[outputs]
+	home = [ "HTML", "JSON"]
+	page = [ "HTML"]

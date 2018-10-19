@@ -752,7 +752,7 @@ if ("document" in self && ("classList" in document.createElement("_") ? ! functi
             };
         Modernizr.ios || (window.addEventListener("resize", c), c());
         var l = function() {
-            pegasus(base_url + "/search_index.json").then(function(e, n) {
+            pegasus(base_url + "/index.json").then(function(e, n) {
                 var o = lunr(function() {
                         this.field("title", {
                             boost: 10
@@ -760,7 +760,10 @@ if ("document" in self && ("classList" in document.createElement("_") ? ! functi
                     }),
                     s = {};
                 e.map(function(t) {
+                    console.log(t)
                     t.location = base_url + t.location, s[t.location] = t, o.add(t)
+                    console.log('base_url: ' + base_url)
+                    console.log('t.location: ' + t.location)
                 }), i.addEventListener("keyup", function() {
                     for (var e = document.querySelector(".results .list"); e.firstChild;) e.removeChild(e.firstChild);
                     var n = document.querySelector(".bar.search");
@@ -769,6 +772,7 @@ if ("document" in self && ("classList" in document.createElement("_") ? ! functi
                         return void n.classList.remove("non-empty")
                     }
                     n.classList.add("non-empty");
+                    console.log('search: ' + i.value)
                     var a = o.search(i.value);
                     a.map(function(n) {
                         var o = s[n.ref],
